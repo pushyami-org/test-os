@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+# A new Pod is created with mentioned name for each run and it is essential that each time you run the app a new pod name should be given
+  name: pod3
+spec:
+  containers:
+  - name: barepod
+  # Docker image name
+    image: 172.30.183.221:5000/py-3-test/py-test-a
+    # command starts the python app , the last argument is the number of times to run simulation and if not given default to one run
+    command: ["python3", "main.py"]
+  # the app is run on demand and creates a pod each time it runs, so we don't want the pod to restart
+  restartPolicy: Never
+
