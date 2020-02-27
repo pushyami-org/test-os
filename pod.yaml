@@ -5,6 +5,7 @@ metadata:
   name: pod3
 spec:
   containers:
+  # baremini pod
   - name: barepod
   # Docker image name from open shift
     image: 172.30.183.221:5000/py-3-test/py-test-a
