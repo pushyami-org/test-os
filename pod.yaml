@@ -5,9 +5,9 @@ metadata:
   name: pod3
 spec:
   containers:
-  # baremini pod
+  # bare mini pod
   - name: barepod
-  # Docker image name from open shift
+  # Docker image name from open shift again 
     image: 172.30.183.221:5000/py-3-test/py-test-a
     # command starts the python app , the last argument is the number of times to run simulation and if not given default to one run
     command: ["python3", "main.py"]
